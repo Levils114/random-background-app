@@ -45,7 +45,7 @@ export default function Home() {
   }
 
   const animateCircleToFullFillScreen = (backgroundColor: string) => {
-    const animationDuration = 600;
+    const animationDuration = 500;
     const screenHeight = Dimensions.get('screen').height;
 
     circleRadius.value = withSequence(
