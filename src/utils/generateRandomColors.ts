@@ -2,7 +2,7 @@ import { isLightColor } from "./isLightColor";
 
 interface Return {
   backgroundColor: string;
-  color: string;
+  textColor: string;
 }
 
 export function generateRandomColors(): Return {
@@ -19,10 +19,10 @@ export function generateRandomColors(): Return {
 
   const isRandomColorLight = isLightColor(randomColor);
 
-  const color = isRandomColorLight ? '#000000' : "#FFFFFF"
+  const textColor = isRandomColorLight ? '#000000' : "#FFFFFF"
 
   return {
     backgroundColor: randomColor,
-    color,
+    textColor,
   }
 }
