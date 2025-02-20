@@ -7,8 +7,8 @@ export function isLightColor(color: string): boolean {
   var greenColorInNumber = parseInt(greenHexColor, 16);
   var blueColorInNumber = parseInt(blueHexColor, 16);
 
-  const brightness = (redColorInNumber + greenColorInNumber + blueColorInNumber) / 710;
+  const brightness = (redColorInNumber + greenColorInNumber + blueColorInNumber) / 765;
 
-  const isLightColor = brightness > 0.5;
+  const isLightColor = brightness > 0.4;
   return isLightColor;
 }
